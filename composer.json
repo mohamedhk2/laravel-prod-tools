@@ -1,0 +1,23 @@
+{
+    "name": "mohamedhk2/laravel-prod-tools",
+    "description": "Laravel Prod Tools",
+    "homepage": "https://github.com/mohamedhk2/laravel-prod-tools",
+    "authors": [
+        {
+            "name": "mohamedhk2",
+            "email": "mohamedhk2@yahoo.fr"
+        }
+    ],
+    "require": {
+        "anhskohbo/no-captcha": "*",
+        "cviebrock/eloquent-sluggable": "*",
+        "intervention/image": "*",
+        "mcamara/laravel-localization": "*",
+        "morningtrain/laravel-https": "*",
+        "spatie/laravel-translatable": "*"
+    },
+    "license": "MIT",
+    "config": {
+        "sort-packages": true
+    }
+}
