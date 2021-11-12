@@ -10,8 +10,11 @@
 1. [anhskohbo/no-captcha](https://packagist.org/packages/anhskohbo/no-captcha)
 1. [cviebrock/eloquent-sluggable](https://packagist.org/packages/cviebrock/eloquent-sluggable)
 1. [intervention/image](https://packagist.org/packages/intervention/image)
+1. [jorenvanhocht/laravel-share](https://packagist.org/packages/jorenvanhocht/laravel-share)
+1. [laravel/ui](https://packagist.org/packages/laravel/ui)
 1. [mcamara/laravel-localization](https://packagist.org/packages/mcamara/laravel-localization)
 1. [morningtrain/laravel-https](https://packagist.org/packages/morningtrain/laravel-https)
+1. [spatie/laravel-medialibrary](https://packagist.org/packages/spatie/laravel-medialibrary)
 1. [spatie/laravel-translatable](https://packagist.org/packages/spatie/laravel-translatable)
 
 ## Install

@@ -12,8 +12,11 @@
         "anhskohbo/no-captcha": "*",
         "cviebrock/eloquent-sluggable": "*",
         "intervention/image": "*",
+        "jorenvanhocht/laravel-share": "*",
+        "laravel/ui": "*",
         "mcamara/laravel-localization": "*",
         "morningtrain/laravel-https": "*",
+        "spatie/laravel-medialibrary": "*",
         "spatie/laravel-translatable": "*"
     },
     "license": "MIT",
