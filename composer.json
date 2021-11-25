@@ -16,6 +16,7 @@
         "laravel/ui": "*",
         "mcamara/laravel-localization": "*",
         "morningtrain/laravel-https": "*",
+        "redcenter/laravel-non-www-redirect": "*",
         "spatie/laravel-medialibrary": "*",
         "spatie/laravel-translatable": "*"
     },

@@ -14,6 +14,7 @@
 1. [laravel/ui](https://packagist.org/packages/laravel/ui)
 1. [mcamara/laravel-localization](https://packagist.org/packages/mcamara/laravel-localization)
 1. [morningtrain/laravel-https](https://packagist.org/packages/morningtrain/laravel-https)
+1. [redcenter/laravel-non-www-redirect](https://packagist.org/packages/redcenter/laravel-non-www-redirect)
 1. [spatie/laravel-medialibrary](https://packagist.org/packages/spatie/laravel-medialibrary)
 1. [spatie/laravel-translatable](https://packagist.org/packages/spatie/laravel-translatable)
 
@@ -23,6 +24,24 @@ The recommended way to install this is through composer:
 
 ```bash
 composer require "mohamedhk2/laravel-prod-tools"
+```
+
+- **Laravel Force SSL**  
+  Update the following in your `.env`:
+```dotenv
+    USE_SSL=true
+    REDIRECT_TO_HTTPS=true
+```
+- **Laravel non-WWW Redirect**  
+Add the middleware class to your Kernel.php in App\Http:
+```
+    protected $middlewareGroups = [
+        'web' => [
+            ...
+            \LaravelNonWwwRedirect\LaravelNonWwwRedirectMiddleware::class,
+            ...
+        ],
+    ];
 ```
 
 ## License
