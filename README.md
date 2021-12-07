@@ -19,19 +19,35 @@
 1. [spatie/laravel-translatable](https://packagist.org/packages/spatie/laravel-translatable)
 
 ## Install
-
 The recommended way to install this is through composer:
-
 ```bash
 composer require "mohamedhk2/laravel-prod-tools"
 ```
-
 - **Laravel Force SSL**  
-  Update the following in your `.env`:
-```dotenv
-    USE_SSL=true
-    REDIRECT_TO_HTTPS=true
-```
+  - **Deploy** the config files:
+  ``` bash
+  $ php artisan vendor:publish
+  ```
+  - and **chose:**  
+    `[ ] Provider: MorningTrain\Laravel\Https\LaravelHttpsServiceProvider`  
+  - **Update** the following in your `.env`:
+  ```dotenv
+      USE_SSL=true
+  ```
+  - **Register the ForceSSL middleware as a global middleware in your `App\Http\Kernel` class:**  
+  ``` php
+  class Kernel extends HttpKernel
+  {
+      /**
+       * The application's middleware stack.
+       *
+       * @var array
+       */
+      protected $middleware = [
+          \MorningTrain\Laravel\Https\Http\Middleware\ForceSSL::class,
+      ];
+  }
+  ```
 - **Laravel non-WWW Redirect**  
 Add the middleware class to your Kernel.php in App\Http:
 ```
@@ -43,7 +59,5 @@ Add the middleware class to your Kernel.php in App\Http:
         ],
     ];
 ```
-
 ## License
-
 The Laravel Prod Tools is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
