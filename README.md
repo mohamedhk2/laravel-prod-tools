@@ -48,16 +48,16 @@ composer require "mohamedhk2/laravel-prod-tools"
       ];
   }
   ```
-- **Laravel non-WWW Redirect**  
-Add the middleware class to your Kernel.php in App\Http:
-```
-    protected $middlewareGroups = [
-        'web' => [
-            ...
-            \LaravelNonWwwRedirect\LaravelNonWwwRedirectMiddleware::class,
-            ...
-        ],
-    ];
-```
+  - **Laravel non-WWW Redirect**  
+  Add the middleware class to your Kernel.php in App\Http:
+  ```
+      protected $middlewareGroups = [
+          'web' => [
+              ...
+              \LaravelNonWwwRedirect\LaravelNonWwwRedirectMiddleware::class,
+              ...
+          ],
+      ];
+  ```
 ## License
 The Laravel Prod Tools is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
