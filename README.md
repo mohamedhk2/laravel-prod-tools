@@ -23,12 +23,13 @@ The recommended way to install this is through composer:
 ```bash
 composer require "mohamedhk2/laravel-prod-tools"
 ```
-- **Laravel Force SSL**  
+
+## Laravel Force SSL
   - **Deploy** the config files:
   ``` bash
   $ php artisan vendor:publish
   ```
-  - and **chose:**  
+  - and **choose:**  
     `[ ] Provider: MorningTrain\Laravel\Https\LaravelHttpsServiceProvider`  
   - **Update** the following in your `.env`:
   ```dotenv
@@ -48,9 +49,10 @@ composer require "mohamedhk2/laravel-prod-tools"
       ];
   }
   ```
-  - **Laravel non-WWW Redirect**  
-  Add the middleware class to your Kernel.php in App\Http:
-  ```
+
+## Laravel non-WWW Redirect
+  - Add the middleware class to your Kernel.php in App\Http:
+  ``` php
       protected $middlewareGroups = [
           'web' => [
               ...
@@ -59,5 +61,6 @@ composer require "mohamedhk2/laravel-prod-tools"
           ],
       ];
   ```
+
 ## License
 The Laravel Prod Tools is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
