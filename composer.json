@@ -11,11 +11,11 @@
     "require": {
         "anhskohbo/no-captcha": "*",
         "cviebrock/eloquent-sluggable": "*",
+        "ecrmnn/laravel-https": "*",
         "intervention/image": "*",
         "jorenvanhocht/laravel-share": "*",
         "laravel/ui": "*",
         "mcamara/laravel-localization": "*",
-        "morningtrain/laravel-https": "*",
         "redcenter/laravel-non-www-redirect": "*",
         "spatie/laravel-medialibrary": "*",
         "spatie/laravel-translatable": "*"
