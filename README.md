@@ -31,7 +31,7 @@
 The recommended way to install this is through composer:
 
 ```bash
-composer require "mohamedhk2/laravel-prod-tools"
+composer require "mohamedhk2/laravel-prod-tools:1.0.3"
 ```
 
 ## Laravel Force SSL
