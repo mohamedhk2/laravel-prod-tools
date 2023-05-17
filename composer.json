@@ -24,5 +24,8 @@
     "license": "MIT",
     "config": {
         "sort-packages": true
+    },
+    "conflict": {
+        "buzz/laravel-h-captcha": "*"
     }
 }

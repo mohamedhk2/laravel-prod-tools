@@ -23,9 +23,9 @@
 
 #### Removed packages
 
-| package                                                                                            | replaced by                                                                 | version | reason                   |
-|----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|---------|--------------------------|
-| <del>[morningtrain/laravel-https](https://packagist.org/packages/morningtrain/laravel-https)</del> | [ecrmnn/laravel-https](https://packagist.org/packages/ecrmnn/laravel-https) | ^1.0.3  | Not support Laravel ^9.x |
+| package                                                                                            | replaced by                                                                 | version     | reason                   |
+|----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|-------------|--------------------------|
+| <del>[morningtrain/laravel-https](https://packagist.org/packages/morningtrain/laravel-https)</del> | [ecrmnn/laravel-https](https://packagist.org/packages/ecrmnn/laravel-https) | only v1.0.3 | Not support Laravel ^9.x |
 
 ## Install
 
@@ -41,6 +41,9 @@ composer require "mohamedhk2/laravel-prod-tools"
 
 - Add under ``providers`` in ``config/app.php``
   ```php
+  /*
+   * Package Service Providers...
+   */
   \Ecrmnn\LaravelHttps\Providers\ServiceProvider::class,
   ```
 
@@ -52,7 +55,8 @@ composer require "mohamedhk2/laravel-prod-tools"
 - **Update** the following in your `.env`:  
   :warning: *HTTPS will only be forced when ``env('HTTPS')`` is set to ``true``* :warning:
   ```dotenv
-      HTTPS=true
+      HTTPS=true    # used by ecrmnn/laravel-https
+      USE_SSL=false # used by morningtrain/laravel-https
   ```
 
 ### - using `morningtrain/laravel-https`
@@ -66,7 +70,8 @@ composer require "mohamedhk2/laravel-prod-tools"
 - **Update** the following in your `.env`:
 
   ```dotenv
-      USE_SSL=true
+      USE_SSL=true # used by morningtrain/laravel-https
+      HTTPS=false  # used by ecrmnn/laravel-https
   ```
 
 - **Register the ForceSSL middleware as a global middleware in your `App\Http\Kernel` class:**
